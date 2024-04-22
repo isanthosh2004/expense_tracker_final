@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylereg.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <form  action ="result.html" id="form" onsubmit="return validateForm()">
+            <h1>Registration</h1>
+
+            <div class="input">
+                <label for="Fullname">Fullname</label>
+                <input type="text" id="Fullname" name="Fullname">
+                <div class="error" id="fullnameError">Required</div>
+            </div>
+            <div class="input">
+                <label for="Dateofbirth">Date of Birth (dd/mm/yyyy)</label>
+                <input type="text" id="Dateofbirth" name="Dateofbirth">
+                <div class="error" id="dobError">Required</div>
+            </div>
+            <div class="gender">
+                <span class="gender-title">Gender: </span>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Not prefer to say"> Not prefer to say
+                <div class="error" id="genderError">Required</div>
+                
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <div class="error" id="emailError">Required</div>
+            </div>
+            <div class="input">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+                <div class="error" id="phoneError">Required</div>
+            </div>
+            <div class="input">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <div class="error" id="usernameError">Required</div>
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="passwordError">Required</div>
+            </div>
+            <div class="input">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error" id="cpasswordError">Required</div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
