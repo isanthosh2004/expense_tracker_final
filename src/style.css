@@ -1,0 +1,119 @@
+@import url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Product Sans';
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+}
+.logo-container {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 7px
+    
+}
+
+.box{
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.box .name{
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;    
+}
+
+.content form .userdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 20px 0 12px 0;
+}
+form .userdetails .inputbox{
+    margin-bottom: 15px;
+    width: calc(48%);
+}
+form .inputbox span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 15px ;
+}
+.userdetails .inputbox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.userdetails .inputbox input:focus,
+.userdetails .inputbox input:valid{
+    border-color:#000000 ;
+}
+
+form .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+form .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 35px;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #c8c5c5, #181818);
+
+}
+form .button input:hover{
+    
+    background: linear-gradient(-135deg, #c8c5c5, #181818);
+    }
+   @media(max-width: 584px){
+   .box{
+    max-width: 50%;
+  }
+  
+
+   }
